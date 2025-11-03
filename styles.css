@@ -1,0 +1,370 @@
+/* Variables de Color y Fuente */
+:root {
+    --color-primary: #000000; /* Negro para texto y acentos */
+    --color-secondary: #333333; /* Gris oscuro para texto secundario */
+    --color-background: #f8f8f8; /* Gris muy claro/casi blanco para fondo */
+    --color-white: #ffffff;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+/* Estilos Globales y Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-main);
+    color: var(--color-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+}
+/* Enlaces base */
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+/* ================================================= */
+/* BARRA DE NAVEGACIÓN (HEADER) */
+/* ================================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800; /* Más robusto para un 'logo' */
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.nav-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+}
+
+.nav-button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white); /* Mantener blanco al hacer hover */
+    transform: translateY(-2px);
+}
+
+/* ================================================= */
+/* SECCIÓN PRINCIPAL (HERO) */
+/* ================================================= */
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 5%;
+    min-height: 80vh;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: var(--color-secondary);
+}
+
+.hero-image {
+    max-width: 450px;
+    /* Estilos para el placeholder de la imagen */
+    min-height: 400px; 
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: var(--color-secondary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================================= */
+/* SECCIÓN DE INFORMACIÓN */
+/* ================================================= */
+
+.info-section {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--color-white);
+    border-top: 1px solid #eeeeee;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1em;
+    color: var(--color-secondary);
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 350px;
+    padding: 30px;
+    background-color: var(--color-background);
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    font-weight: 800;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.feature-card p {
+    color: var(--color-secondary);
+}
+
+/* ================================================= */
+/* PIE DE PÁGINA (FOOTER) */
+/* ================================================= */
+
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-info span, .contact-info a {
+    color: var(--color-white);
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #cccccc;
+}
+/* Variables de Color */
+:root {
+    --color-background: #F5F5F0;     /* Fondo Blanco Roto */
+    --color-dark: #343D3F;           /* Texto Oscuro / Carbón */
+    --color-accent-soft: #E8C9C4;    /* Rosa Pálido / Acento principal */
+    --color-accent-subtle: #918B8A;  /* Marrón Grisáceo / Acento secundario */
+    --color-white: #FFFFFF;
+}
+
+/* Estilos Globales y Fondo */
+body {
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y limpia */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado Principal (Replicando la barra superior) */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.logo-container h1 {
+    font-family: 'Cormorant Garamond', serif; /* Fuente elegante */
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Estilo de los botones de navegación (CARACTERÍSTICAS y EJEMPLOS) */
+.nav-button {
+    background-color: var(--color-accent-subtle);
+    color: var(--color-white);
+    padding: 8px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: var(--color-dark);
+}
+
+/* Estilo de Títulos (FUNCIONAMIENTO Y USO) */
+.title-style {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--color-dark);
+    /* Fondo rectangular pequeño como en el diseño */
+    background-color: var(--color-accent-subtle); 
+    color: var(--color-white);
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+/* Estilo del recuadro de información */
+.info-box {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-accent-soft);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-box p {
+    color: var(--color-dark);
+    margin: 0;
+}
+
+/* Título con estilo de fuente personalizado (CONSTRUYE TU PROPIO ROBOT) */
+.accent-title {
+    background: none; /* Quitamos el fondo para este título */
+    color: var(--color-dark);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 2em;
+    border-bottom: 2px solid var(--color-accent-soft);
+    padding-bottom: 5px;
+}
+
+/* Pie de página (MÁS INFORMACIÓN) */
+footer {
+    background-color: var(--color-background);
+    border-top: 2px solid var(--color-accent-soft);
+    padding: 20px 5%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: var(--color-dark);
+    font-size: 0.9em;
+}
+/* --- NUEVOS Estilos para el Icono en el Encabezado --- */
+
+/* Contenedor que alinea la imagen y el título */
+.logo-and-title {
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen con el texto */
+    gap: 10px; /* Pequeño espacio entre la imagen y el título */
+}
+
+/* Estilo para la imagen del robot en el encabezado (la hacemos pequeña) */
+.header-robot-icon {
+    width: 45px; /* Controla el tamaño (ajusta este valor si quieres que sea más chiquito o grande) */
+    height: auto;
+    border-radius: 50%; /* Opcional: si quieres que la imagen tenga forma de círculo */
+    /* El diseño original tenía un contorno sutil */
+    border: 2px solid var(--color-accent-soft); 
+    padding: 2px;
+}
+
+/* Ajuste del título para que esté bien alineado */
+.logo-container h1 {
+    /* Mantén los estilos de fuente que tenías antes */
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Ajuste de la navegación para que quede a la derecha */
+.main-header {
+    /* (Asegúrate de que este estilo ya existe y tiene display: flex y justify-content: space-between) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
